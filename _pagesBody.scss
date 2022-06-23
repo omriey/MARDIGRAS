@@ -1,0 +1,410 @@
+/* ------------------general------------------- */
+
+
+
+/* ---------------home----------------------- */
+
+.slider__cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #000;
+    background-color: var(--SGreen)
+}
+
+.slider {
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 1600px;
+    max-height: 800px;
+    overflow: hidden;
+}
+
+.slider__slides {
+    width: 100%;
+    padding-top: 66%;
+}
+
+.slider__slide {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bold;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 1.5s;
+    opacity: 0;
+}
+
+.slider__slide.active {
+    opacity: 1;
+}
+
+.slider__slide img {
+    width: 100%;
+}
+
+.slider__nav__button {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    background-color: #333;
+    color: #fff;
+    opacity: .8;
+    cursor: pointer;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+#nav__button__prev {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+#nav__button__next {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+
+.slider__nav {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.slider__navlink {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 1px #fff solid;
+    background-color: #333;
+    opacity: 1;
+    margin: 0 5px 0 5px;
+    cursor: pointer;
+}
+
+.slider__navlink.active {
+    background-color: #fff;
+    border: 1px #333 solid;
+}
+
+.logos__cont__mobile {
+    width: 100%;
+    background-color: var(--SPurple);
+
+    img {
+        width: 100%;
+        height: 100px;
+        max-width: 200px;
+        border-radius: 20px;
+    }
+}
+
+.card__design {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 5px 5px 5px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-grow: 2;
+    font-size: 0.8em;
+    background-color: beige;
+    justify-content: center;
+
+    h4 {
+        font-size: 1.5em;
+        top: 0;
+        color: black;
+    }
+
+    p {
+        margin: 10px;
+
+        img {
+            width: 80px;
+            height: 80px;
+            float: left;
+            margin-right: 5px;
+            margin-top: 5px;
+        }
+    }
+
+    footer {
+        margin-top: auto;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+    }
+}
+
+.info__cont {
+    border: 1px black solid;
+    height: fit-content;
+    width: fit-content;
+    background-image: linear-gradient(to bottom right, rgb(96, 150, 15), rgb(148, 83, 166), rgb(242, 204, 15));
+
+    a {
+        color: maroon;
+        font-weight: 800;
+        font-size: 1em;
+        text-decoration: none;
+    }
+}
+
+iframe {
+    max-width: 415px;
+    padding: 5px;
+}
+
+.flex__cont {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 10px 20px 10px;
+}
+
+.child__mayor {
+    margin-top: 20px;
+    border-top: 2px black solid;
+    text-align: justify;
+}
+
+
+.child__info {
+    text-align: justify;
+}
+
+/* ------------------Gallery page------------------- */
+.galleryMain__cont {
+    width: 100%;
+    height: 100%;
+    background-color: var(--SPurple);
+    margin: 0;
+}
+
+
+.gallery__header__cont {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    background-color: var(--SGreen);
+}
+
+.buttons__gallery {
+    margin: 20px 10px 20px 10px;
+
+    button {
+        border: 1px solid #000;
+        margin-right: 5px;
+        padding: 5px;
+        font-size: 1em;
+        border-radius: 8px;
+        background-color: var(--SGold);
+        font-family: 'pattaya';
+        cursor: pointer
+    }
+}
+
+/* -------------------about page------------------- */
+.about__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    align-items: center;
+    background-color: seashell;
+    margin: 0 auto;
+
+
+    .about__section,
+    .section__mayor {
+        margin: 20px;
+        text-align: justify;
+        line-height: 2;
+
+        h2 {
+            font-size: 2em;
+        }
+
+        h3 {
+            font-size: 1.6em;
+        }
+
+        img {
+            float: left;
+            margin-right: 10px;
+            margin-top: 5px;
+
+        }
+    }
+}
+
+
+.about__section {
+    img {
+        float: left;
+        margin-right: 10px;
+        margin-top: 5px;
+        width: 200px;
+        height: 180px;
+    }
+}
+
+/* --------------------------faq--------------------- */
+
+
+h2 {
+    margin: 0 auto;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+h3 {
+    margin-left: 50px;
+}
+
+.faq__wrapper {
+    height: 100vh;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: black;
+    background-image: linear-gradient(to bottom right, rgb(96, 150, 15), rgb(242, 204, 15));
+    cursor: pointer;
+
+}
+
+.faq__wrapper .expand__cont {
+    position: relative;
+}
+
+.faq__wrapper .expand__cont .question__title {
+    position: relative;
+    margin: 10px 0 10px 0;
+    padding: 15px 15px 15px 15px;
+    background-image: linear-gradient(to bottom right, rgb(148, 83, 166), rgb(242, 204, 15));
+    cursor: pointer;
+}
+
+.question__title::before {
+    content: '+';
+    color: black;
+    position: absolute;
+    top: 50%;
+    margin-right: 15px;
+    right: 0;
+    font-size: 40px;
+
+    transform: translateY(-50%);
+}
+
+.expand__cont .answer {
+    position: relative;
+    background: inherit;
+    height: 0;
+    text-align: justify;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+    background-color: rgb(171, 106, 106);
+    margin: 10px 20px 0 20px;
+    padding: 0 20px 0 20px;
+}
+
+.expand__cont.active .answer {
+    height: 160px;
+}
+
+.expand__cont.active .question__title::before {
+    content: '-';
+}
+
+/* ---------------------contact page----------------------- */
+
+
+.body__cont {
+    height: 100vh;
+    align-items: center;
+    justify-items: center;
+    background-color: seashell;
+
+    h2 {
+        font-size: 2em;
+        padding-top: 50px;
+    }
+}
+
+
+
+.form__container {
+    margin: 0 auto;
+    background-color: seashell;
+    border-radius: 15px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, .5);
+    width: 800px;
+    padding: 20px;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+
+}
+
+.formControl {
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.formControl input,
+textarea {
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1rem;
+}
+
+.formControl input:focus {
+    outline: 0;
+    border-color: #777;
+}
+
+.formControl.success input {
+    border-color: var(--success);
+}
+
+.formControl.error input {
+    border-color: var(--error);
+}
+
+.formControl small {
+    color: var(--error);
+    visibility: hidden;
+}
+
+.formControl.error small {
+    visibility: visible;
+}
+
+input[type=submit] {
+    border: 2px solid black;
+    background-color: var(--SGreen);
+    border-radius: 4px;
+    color: beige;
+    display: block;
+    font-size: 1rem;
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+}

@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scrollbar-color: transparent transparent;
+    scrollbar-width: 0px;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+body {
+    border: 1px solid #000;
+
+
+}
+
+h3 {
+    margin: 20px 0 20px 0;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Pattaya', sans-serif;
+}
+
+:root {
+    --SPurple: #9453a6;
+    --SGreen: #8cbf3f;
+    --SGold: #f2cc0f;
+    --success: #2c7;
+    --error: #e43;
+}
